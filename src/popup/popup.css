@@ -1,0 +1,100 @@
+:root {
+    --panel-bg: #2b2a33;
+    --row-hover: #3a3943;
+    --row-active: #45444f;
+    --title: #fbfbfe;
+    --subtitle: #a8a8b3;
+    --icon: #fbfbfe;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--panel-bg);
+    color: var(--title);
+    font: menu;
+    font-size: 13px;
+}
+
+body {
+    min-width: 260px;
+    padding: 4px 0;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 8px 12px;
+    margin: 0;
+    background: transparent;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    text-align: start;
+    cursor: pointer;
+}
+
+.row:hover {
+    background: var(--row-hover);
+}
+
+.row:active {
+    background: var(--row-active);
+}
+
+.row:focus-visible {
+    outline-offset: -2px;
+}
+
+.row .icon {
+    flex: 0 0 16px;
+    width: 16px;
+    height: 16px;
+    color: var(--icon);
+    display: grid;
+    place-items: center;
+}
+
+.row .icon svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    stroke: currentColor;
+}
+
+.row .text {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.row .title {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--title);
+}
+
+.row .subtitle {
+    font-size: 12px;
+    line-height: 1.25;
+    color: var(--subtitle);
+    margin-top: 1px;
+}
+
+.row:disabled {
+    opacity: 0.45;
+    cursor: default;
+}
+
+.row:disabled:hover,
+.row:disabled:active {
+    background: transparent;
+}

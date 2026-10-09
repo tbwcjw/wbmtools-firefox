@@ -1,0 +1,39 @@
+{
+    "manifest_version": 3,
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "wbmtools@tbwcjw"
+        }
+    },
+
+    "name": "Wayback Machine Tools",
+    "version": "1.0",
+    "description": "Tools for using the Wayback Machine: including viewing raw pages, and their source code.",
+    "homepage_url": "https://github.com/tbwcjw/wbmtools-firefox",
+    "author": "tbwcjw",
+    "icons": {
+        "32": "icon/icon.svg",
+        "48": "icon/icon.svg",
+        "96": "icon/icon.svg"
+    },
+
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ],
+    "action": {
+        "default_title": "Wayback options",
+        "default_popup": "popup/popup.html"
+    },
+    "background": {
+        "scripts": ["wb.js", "background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://web.archive.org/web/*"],
+            "js": ["wb.js", "content.js"],
+            "run_at": "document_idle"
+        }
+    ]
+    
+}
