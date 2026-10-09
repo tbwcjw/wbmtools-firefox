@@ -12,6 +12,7 @@
     <li>On-page buttons injected automatically on any Wayback snapshot</li>
     <li>Popup menu available from the toolbar on any tab</li>
     <li>Lightweight: no data collection, no external requests, no tracking</li>
+    <li>Open any page to its Wayback snapshot with one click</li>
 </ul>
 
 <h5>How it works:</h5>
