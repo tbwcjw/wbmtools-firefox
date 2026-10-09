@@ -2,7 +2,10 @@
     "manifest_version": 3,
     "browser_specific_settings": {
         "gecko": {
-            "id": "wbmtools@tbwcjw"
+            "id": "wbmtools@tbwcjw",
+            "data_collection_permissions": {
+                "required": ["none"]
+            }
         }
     },
 
