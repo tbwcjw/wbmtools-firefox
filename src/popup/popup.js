@@ -20,6 +20,7 @@ async function cur_tab() {
 
     if(snapshot(url) || url.includes(wb_url)) {
         disable('wayback');
+        disable('save');
     }
 
 })();
@@ -38,6 +39,15 @@ document.getElementById('wayback').addEventListener('click', async () => {
 
     const wb_path = "https://" + wb_url + tab.url;
     await browser.tabs.update(tab.id, { url: wb_path });
+    window.close();
+});
+
+document.getElementById('save').addEventListener('click', async () => {
+    const tab = await cur_tab();
+    if(!tab || tab.url.includes(wb_url)) return;
+    const wb_save_path = "https://" + wb_save_url + tab.url;
+    console.log(wb_save_path);
+    await browser.tabs.update(tab.id, { url: wb_save_path });
     window.close();
 });
 
