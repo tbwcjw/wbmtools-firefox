@@ -10,7 +10,7 @@
     },
 
     "name": "Wayback Machine Tools",
-    "version": "1.0",
+    "version": "1.1",
     "description": "Tools for using the Wayback Machine: including viewing raw pages, and their source code.",
     "homepage_url": "https://github.com/tbwcjw/wbmtools-firefox",
     "author": "tbwcjw",
