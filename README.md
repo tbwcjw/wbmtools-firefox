@@ -13,6 +13,8 @@
     <li>Popup menu available from the toolbar on any tab</li>
     <li>Lightweight: no data collection, no external requests, no tracking</li>
     <li>Open any page to its Wayback snapshot with one click</li>
+    <li>Save a page as a snapshot to Wayback Machine via the popup menu.</li>
+    <li>Open a page to its latest snapshot on the Wayback Machine.</li>
 </ul>
 
 <h5>How it works:</h5>
@@ -25,4 +27,4 @@ The "id_" suffix tells the Archive to skip its toolbar injection and link rewrit
 This extension simply adds that suffix for you, and offers a one-click path to view-source when you need to inspect the underlying HTML.
 
 <h5>Installation:</h5>
-<p>Available (soon) in the <a href="https://addons.mozilla.org/en-US/firefox/addon/wbm-tools/">Firefox Addons Store</a>
+<p>Available in the <a href="https://addons.mozilla.org/en-US/firefox/addon/wbm-tools/">Firefox Addons Store</a>
